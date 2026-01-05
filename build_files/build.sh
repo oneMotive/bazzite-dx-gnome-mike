@@ -14,7 +14,8 @@ set -ouex pipefail
 dnf5 install -y mpv \
     vlc \
     virt-manager \
-    virt-viewer 
+    virt-viewer \
+    kernel-cachyos kernel-cachyos-devel-matched
 
 # Use a COPR Example:
 #
@@ -22,6 +23,7 @@ dnf5 install -y mpv \
 # dnf5 -y install package
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
+dnf5 -y copr enable bieszczaders/kernel-cachyos
 
 #### Example for enabling a System Unit File
 
