@@ -14,9 +14,7 @@ set -ouex pipefail
 dnf5 install -y mpv \
     vlc \
     virt-manager \
-    virt-viewer \
-    kernel-cachyos \
-    kernel-cachyos-devel-matched
+    virt-viewer
 
 # Use a COPR Example:
 #
