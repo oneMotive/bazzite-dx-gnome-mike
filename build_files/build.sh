@@ -22,9 +22,11 @@ dnf5 install -y mpv \
 # dnf5 -y install package
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
-dnf5 -y copr enable bieszczaders/kernel-cachyos
-dnf5 install -y kernel-cachyos kernel-cachyos-devel-matched
-dnf5 -y copr disable bieszczaders/kernel-cachyos
+
+#Trying cachy
+#dnf5 -y copr enable bieszczaders/kernel-cachyos
+#dnf5 install -y kernel-cachyos kernel-cachyos-devel-matched
+#dnf5 -y copr disable bieszczaders/kernel-cachyos
 
 #### Example for enabling a System Unit File
 
